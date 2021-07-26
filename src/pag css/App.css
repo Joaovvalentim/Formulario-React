@@ -1,0 +1,127 @@
+body {
+  line-height: 1.5;
+  font-family:'Poppins', sans-serif;
+  max-width       : 100vw;
+  background-color: rgb(204, 255, 255);
+  display         : flex;
+  min-height      : 100vh;
+  flex-direction  : column;
+
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.h1 {
+  text-align: justify;
+}
+
+.h4 {
+  text-align: center;
+}
+
+.colum {
+  text-align: initial;
+}
+
+.text {
+  max-width       : 400px;
+  padding         : 20px;
+  justify-content : center;
+  align-content   : center;
+  text-align      : center;
+  background-color: #a0f1f1;
+  border-radius   : 10px;
+}
+
+.c3 {
+  padding-left: 8px;
+}
+
+.pageContainer {
+  display        : flex;
+  flex-direction : column;
+  justify-content: space-between;
+  height         : 100vh;
+  margin-top     : 80px;
+}
+
+
+
+.line {
+  display        : flex;
+  justify-content: space-evenly;
+  align-items    : center;
+}
+
+.row {
+  display    : flex;
+  align-items: center;
+  padding    : 20px;
+}
+
+.name_form {
+  text-align     : initial;
+  justify-content: space-between;
+}
+
+.inputField {
+  padding: 10px;
+}
+
+.divBottom {
+  margin-top: 20px;
+  float     : right;
+
+}
+
+.bottom {
+  background-color: teal;
+  border-radius   : 3px;
+  outline         : none;
+  display         : flex;
+  flex-direction  : row;
+  align-items     : center;
+  justify-content : space-between;
+  width           : 100px;
+  color           : black;
+  border          : none;
+  padding         : 10px;
+  cursor          : pointer;
+  transition: all 0.3s;
+}
+
+.bottom:hover {
+  color           : white;
+  background-color: rgb(22, 207, 207);
+
+}
+
+
+
+.validate {
+  padding: 10px;
+}
+
+.textAreaContainer {
+  flex-direction: row;
+  align-items   : initial
+}
+
+@media (max-width: 1200px){
+    .line{
+        flex-direction: column;
+    }
+  }
+
+
+
+  @media (max-width: 1200px) {
+    .row {
+        display       : flex;
+        flex-direction: column;
+        align-items   : flex-start;
+        padding       : 10px;
+    }
+}

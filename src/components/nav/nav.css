@@ -1,0 +1,80 @@
+* {
+    margin : 0;
+    padding: 0;
+}
+
+a {
+    color          : #ffffff;
+    text-decoration: none;
+    transition     : 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size     : 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
+    display        : flex;
+    justify-content: space-around;
+    align-items    : center;
+    font-family    : system-ui, -apple-system, Arial, Helvetica, sans-serif;
+    background     : teal;
+    height         : 8vh;
+}
+
+.navList {
+    list-style: none;
+    display   : flex;
+}
+
+.navList li {
+    letter-spacing: 3px;
+    margin-left   : 32px;
+}
+.mobileMenu{
+    display: none;
+    cursor: pointer;
+}
+.mobileMenu div{
+    width: 32px;
+    height: 2px;
+    background: black;
+    margin: 8px;
+    transition: 0.3s;
+  }
+@media (max-width:999px) {
+    body{
+        overflow-x: hidden;
+    }
+ .navList{
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: teal;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+ }
+
+    .navList li {
+        margin-left: 0;
+        opacity    : 0;
+    }
+
+    .mobileMenu{
+        display: block;
+    }
+}
+.nav-list.active {
+    transform: translateX(0);
+  }

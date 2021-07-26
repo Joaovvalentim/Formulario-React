@@ -1,0 +1,11 @@
+.select {
+    border          : 1px solid teal;
+    border-radius   : 3px;
+    outline         : none;
+    padding         : 10px;
+    background-color: transparent;
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    width           : 100%;
+}
